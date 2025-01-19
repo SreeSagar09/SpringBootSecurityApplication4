@@ -1,0 +1,16 @@
+A Program to show how to configure spring security with SecurityFilterChain interface and authentication with dynamic users by using UserDetailsService:
+Programs:
+* SpringBootSecurityApplication4Application.java
+* CustomUserDetails.java
+* SecurityConfiguration.java
+* UsersController.java
+* UsersDTO.java
+* Users.java
+* UsersRepository.java
+* UserDetailsServiceImpl.java
+* UsersService.java
+* UsersServiceImpl.java
+Notes:
+
+Output:
+From main method in SpringBootSecurityApplication4Application class.
