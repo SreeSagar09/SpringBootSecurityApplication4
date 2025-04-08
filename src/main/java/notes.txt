@@ -14,3 +14,21 @@ Notes:
 
 Output:
 From main method in SpringBootSecurityApplication4Application class.
+
+Sql Queries:
+CREATE TABLE `users` (
+	`user_id` INT(10) NOT NULL AUTO_INCREMENT,
+	`user_name` VARCHAR(500) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`raw_password` VARCHAR(1000) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`enc_password` VARCHAR(1000) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`first_name` VARCHAR(500) NOT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`last_name` VARCHAR(500) NULL DEFAULT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`address` VARCHAR(500) NULL DEFAULT NULL COLLATE 'utf8mb4_0900_ai_ci',
+	`created_date` TIMESTAMP NOT NULL,
+	`updated_date` TIMESTAMP NOT NULL,
+	PRIMARY KEY (`user_id`) USING BTREE,
+	UNIQUE INDEX `Index 2` (`user_name`) USING BTREE
+)
+COLLATE='utf8mb4_0900_ai_ci'
+ENGINE=InnoDB
+;
