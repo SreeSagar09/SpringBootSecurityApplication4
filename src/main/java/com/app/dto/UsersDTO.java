@@ -29,7 +29,7 @@ public class UsersDTO {
 		this.updatedDate = updatedDate;
 	}
 	
-	public UsersDTO(UsersDTOBuilder object) {
+	private UsersDTO(UsersDTOBuilder object) {
 		this.userId = object.userId;
 		this.userName = object.userName;
 		this.firstName = object.firstName;
